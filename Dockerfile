@@ -16,6 +16,8 @@ WORKDIR /usr/local/bin
 
 COPY mn_entry.sh /usr/local/bin
 
+RUN chmod 744 mn_entry.sh
+
 ENV masternodeprivkey=xxxxxxxxxxxxxxxxxx
 ENV ip=x.x.x.x
 ENV coin=the_coin_name
