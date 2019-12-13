@@ -1,0 +1,25 @@
+version: '2'
+volumes:
+  db-vol:
+  configdb-vol:
+services:
+
+  MN1:
+    image: smartinsider/dvn-elastic-masternode:latest
+    restart: unless-stopped
+    environment:
+      coin: "zefir"
+      ip: "0.0.0.0"
+      masternodeprivkey: "1234JbAY7F89c8XvqS2mr55Ht4k001ZoSwU55c7co79th1nEvXa"
+    ports:    
+      - "18001:5333"
+
+  MN2:
+    image: smartinsider/dvn-elastic-masternode:latest
+    restart: unless-stopped
+    environment:
+      coin: "zefir"
+      ip: "0.0.0.0"
+      masternodeprivkey: "1234JbAY7F89c001qS2mr55Ht4kDQ8ZoSwU55c7co79th1nEvXa"
+    ports:    
+      - "18002:5333"
