@@ -1,11 +1,11 @@
-#DOCKER FOR DIVINE.LIFE MASTERNODES
+# DOCKER FOR DIVINE.LIFE MASTERNODES
 
 Supported coins:
 - cryptoyen
 - zefir
 - happyleaf
 
-SETUP EXAMPLE:
+### SETUP EXAMPLE:
 
 ```
   MN1:
